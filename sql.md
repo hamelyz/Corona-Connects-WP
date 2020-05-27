@@ -16,21 +16,24 @@
 > - Description_full: String[512]
 > - Location: String[128]
 > - Organization: String[32]
-> - Time commitment: String[64] //"int unit freq"
+> - Unique ID: String[256]
+> - Time commitment: String[64] //"int unit freq"\>
+> - People needed: Integer
+> - People current: Integer
 > - Dates needed: String[16][64]
 > - Date posted: String[64]
        
-# Queries
+# Queries (In JSON dict form)
 > ## organization
-> - POST (Name, Email, Location, URL, Description)
-> - PUT (?)
-> - DELETE(Email)
-> - GET (Email)
+> - POST (Name, Email, Location, URL, Description) -> UID | *only name and email are required*
+> - PUT (UID, "items to be changed")
+> - DELETE(UID)
+> - GET (UID)
 
 > ## opporotunity
-> - POST (Title, Type, Description_brief, Location, Time, Dates, Organization, description_full)
-> - PUT (?)
-> - DELETE (Title, organization)
-> - GET (Title, organization)
+> - POST (Title, Type, Description_brief, Location, Time, Dates, people_needed, Organization, description_full) -> UID
+> - PUT (UID, "Items to be changed")
+> - DELETE (UID)
+> - GET (UID)
 
 
