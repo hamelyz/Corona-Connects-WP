@@ -21,4 +21,16 @@
 > - Date posted: String[64]
        
 # Queries
-> ## addOrg
+> ## organization
+> - POST (Name, Email, Location, URL, Description)
+> - PUT (?)
+> - DELETE(Email)
+> - GET (Email)
+
+> ## opporotunity
+> - POST (Title, Type, Description_brief, Location, Time, Dates, Organization, description_full)
+> - PUT (?)
+> - DELETE (Title, organization)
+> - GET (Title, organization)
+
+
