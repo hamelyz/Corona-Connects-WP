@@ -3,9 +3,9 @@
 > ## Organization
 > - Name: String[32]
 > - Description: String[256]
-> - Website URL: String[128]
+> - URL: String[128]
 > - Location: String[64] //City, State
-> - Unique ID: String[256]
+> - UID: String[256]
 > - Opporotunities: Opp[64]
 > - Email: String[64]
     
@@ -16,14 +16,14 @@
 > - Description_full: String[512]
 > - Location: String[128]
 > - Organization: String[32]
-> - Unique ID: String[256]
-> - Time commitment: String[64] //"int unit freq"\>
-> - People needed: Integer
-> - People current: Integer
-> - Dates needed: String[16][64]
-> - Date posted: String[64]
+> - UID: String[256]
+> - Commitment: String[64] //"int unit freq"\>
+> - People_needed: Integer
+> - People_current: Integer
+> - Dates_needed: String[16][64]
+> - Date_posted: String[64]
        
-# Queries (In JSON dict form)
+# Queries (In JSON dict form, with keys as listed above)
 > ## organization
 > - POST (Name, Email, Location, URL, Description) -> UID | *only name and email are required*
 > - PUT (UID, "items to be changed")
