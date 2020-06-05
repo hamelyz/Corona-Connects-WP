@@ -1,0 +1,28 @@
+organization(
+  name            char(32),
+  description     char(256),
+  url             char(128),
+  location        char(64),
+  uid             char(256),
+  opporotunities  tbd,
+  email           char(64),
+  
+  primary key (uid)
+);
+
+opporotunity(
+  title             char(32),
+  type              char(32),
+  description_brief char(128),
+  description_full  char(512),
+  location          char(128),
+  organization      char(32),
+  uid               char(256),
+  commitment        char(64),
+  people_needed     int,
+  people_current    int,
+  dates_needed      tbd,
+  dates_posted      tbd,
+  
+  primary key (uid)
+);
