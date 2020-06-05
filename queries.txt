@@ -1,0 +1,9 @@
+def add_organization(self, args):
+    cmd="""
+        INSERT INTO
+            organization(name, description, url, location, uid, opporotunities, email)
+        VALUES
+            (%s, %s, %s, %s, %, %s, %s)
+        """
+    self.db_conn.execute(cmd, [name, description, urk, location, getUID(), [], email], False)
+    
