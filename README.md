@@ -3,7 +3,7 @@ coronaconnects.org website repo for files and issue tracking
 
 ## Terminal interactions:
 > 1.  SSH
-  > - ssh -i [.pem file] bitnami@[ipaddress]
+>  > - ssh -i [.pem file] bitnami@[ipaddress]
 > 2. SCP push
   > - scp -i [.pem file] [local-path/to/file] bitnami@[ipaddress]:[remote-pth/to/destination]
 > 3. SCP pull
