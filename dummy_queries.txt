@@ -1,0 +1,24 @@
+##ORGANIZATION##
+POST('org1','org1@gmail.com') 
+#Returns uid1
+POST('nyvolunteering','info@nyvolunteering.com','New York', 'www.nyvolunteering.com','Volunteering services in NYC')
+#returns uid2
+GET(uid1)
+GET(uid2)
+PUT(uid1,'Name','Apollo Hospital')
+GET(uid1)
+#Name of org1 should be updated
+DELETE(uid2)
+GET(uid2)
+#Expect Null or not-found error
+
+##OPPORTUNITY##
+POST('Tutor','Volunteer','Looking for volunteers to tutor in NYC', 'New York', '16:30', '06-08-2020', '7', 'Long Island Public School', 'Looking for volunteers to tutor middle school maths in NYC, preferably in Long Island area.')
+#returns uid1
+GET(uid1)
+PUT(uid1,'People','10')
+GET(uid1)
+#number of volunteers required updated from 7 to 10
+DELETE(uid1)
+GET(uid1)
+#Expect Null or not-found error
