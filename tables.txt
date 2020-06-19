@@ -4,7 +4,7 @@ organization(
   url             char(128),
   location        char(64),
   uid             char(256),
-  opporotunities  tbd,
+  opportunities  tbd,
   email           char(64),
   
   primary key (uid)
