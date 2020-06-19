@@ -1,3 +1,11 @@
+user(
+  username        char(32),
+  password        char(64),
+  uid             char(256),
+  
+  primary key (uid)
+);
+
 organization(
   name            char(32),
   description     char(256),
